@@ -28,7 +28,7 @@ This is the backend API for the Leaderboard project. It is built with Node.js an
 3. Create a .env file in the root directory and add:
     MONGO_URI=your_mongodb_connection_string
     PORT=5000
-4.Running the Server
+4. Running the Server
     Start the development server with:
     npm start
     The API will be available at: http://localhost:5000
