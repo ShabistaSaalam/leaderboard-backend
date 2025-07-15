@@ -7,7 +7,12 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 app.use(cors());
 app.use(express.json());
+import cors from "cors"; 
 
+app.use(cors({
+  origin: "https://leaderboard-frontend-site.onrender.com", // allow only your frontend origin
+  methods: ["GET", "POST"], // methods you want to allow
+}));
 // Connect DB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
